@@ -1,0 +1,414 @@
+body {
+  height: 100vh;
+  background: url(./assets/bg3.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+body::after {
+  content: "";
+  /* background: url(./assets/bg2.jpg); */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* SHOW HEROES BUTTON ````````````````````````````*/
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header img {
+  border-radius: 25px;
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.header img:hover {
+  width: 650px;
+  box-shadow: 5px 1px 25px 55px rgba(255, 255, 255, 0.5450980392);
+}
+
+/* SHOW HEROES BUTTON ````````````````````````````*/
+/* ALBUM FIRST STORY IMAGE ````````````````````*/
+.album {
+  display: flex;
+  justify-content: center;
+  opacity: 0.89;
+}
+.album img {
+  border-radius: 400px;
+  width: 900px;
+  margin-top: 200px;
+}
+.album img:hover {
+  box-shadow: 5px 1px 25px 55px rgba(255, 255, 255, 0.5450980392);
+}
+
+/* ALBUM FIRST STORY IMAGE ````````````````````*/
+/* IFRAME */
+.video {
+  display: flex;
+  margin-top: 150px;
+}
+
+.ratio {
+  width: 650px;
+  height: 400px;
+  margin: 0 auto;
+  border: 15px solid rgba(96, 114, 114, 0.481);
+  border-radius: 15px;
+}
+.ratio:hover {
+  box-shadow: 5px 1px 25px 55px rgba(255, 255, 255, 0.5450980392);
+}
+
+/* IFRAME */
+/* FOOTER BUTTON START GAME ``````````````````````````*/
+.footer {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+}
+.footer img {
+  border-radius: 15px;
+  width: 600px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.footer img:hover {
+  width: 700px;
+  box-shadow: 5px 1px 25px 66px rgba(42, 179, 168, 0.2745098039);
+}
+
+/* FOOTER BUTTON START GAME ``````````````````````````*/
+/* HEROES CARD ```````````````````````````*/
+.container-heroes {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  height: 70%;
+  font-size: 1.4rem;
+}
+.container-heroes img {
+  width: 250px;
+}
+.container-heroes img:hover {
+  width: 350px;
+}
+
+.dwarf,
+.sprite,
+.dragon {
+  box-shadow: 5px 1px 25px 25px rgba(255, 255, 255, 0.5450980392);
+  padding: 15px;
+  width: 500px;
+  height: 600px;
+  background-color: rgba(98, 73, 42, 0.334);
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.dwarf:hover {
+  background-color: rgba(48, 102, 102, 0.736);
+  font-weight: 800;
+}
+
+.sprite:hover {
+  background-color: rgba(116, 42, 42, 0.719);
+  font-weight: 800;
+}
+
+.dragon:hover {
+  background-color: rgba(48, 102, 63, 0.759);
+  font-weight: 800;
+}
+
+/* HEROES CARD ```````````````````````````*/
+/* DISPLAY TYPE */
+.d-none {
+  display: none !important;
+}
+
+.d-grid {
+  display: grid !important;
+  /* display: grid; */
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+/* DISPLAY TYPE */
+/* ADDES IN JS */
+.opacity05 {
+  opacity: 0.5;
+}
+
+.cursor-off {
+  pointer-events: none;
+}
+
+.wrapper-cursor {
+  cursor: not-allowed;
+}
+
+/* ADDES IN JS */
+/* CONTAINER CHOOSE HEROES `````````````````````````````````````*/
+.container-choose-heroes {
+  display: none;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-align: center;
+  gap: 35px;
+}
+.container-choose-heroes img {
+  width: 200px;
+  height: 200px;
+}
+.container-choose-heroes img:hover {
+  width: 220px;
+  height: 220px;
+}
+.container-choose-heroes p {
+  width: 300px;
+}
+
+.dwarf-choose {
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 25px;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  background-color: rgba(48, 102, 102, 0.412);
+  box-shadow: 5px 1px 25px 25px rgba(49, 201, 209, 0.2862745098);
+}
+
+.dwarf-choose-selected {
+  background-color: rgba(48, 102, 102, 0.794);
+  box-shadow: 5px 1px 25px 25px rgba(49, 201, 209, 0.631372549);
+}
+
+.dwarf-choose-inactive {
+  background-color: rgba(48, 102, 102, 0.412);
+  box-shadow: 5px 1px 25px 25px rgba(49, 201, 209, 0.2862745098);
+}
+
+.dwarf-choose:active {
+  background-color: rgba(48, 102, 102, 0.794);
+  box-shadow: 5px 1px 25px 25px rgba(49, 201, 209, 0.4117647059);
+}
+
+.sprite-choose {
+  cursor: pointer;
+  border-radius: 25px;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  background-color: rgba(116, 42, 42, 0.416);
+  box-shadow: 5px 1px 25px 25px rgba(209, 49, 49, 0.2156862745);
+}
+
+.sprite-choose-selected {
+  background-color: rgba(116, 42, 42, 0.665);
+  box-shadow: 5px 1px 25px 25px rgba(209, 49, 49, 0.5843137255);
+}
+
+.sprite-choose-inactive {
+  background-color: rgba(116, 42, 42, 0.416);
+  box-shadow: 5px 1px 25px 25px rgba(209, 49, 49, 0.2156862745);
+}
+
+.sprite-choose:active {
+  background-color: rgba(116, 42, 42, 0.665);
+  box-shadow: 5px 1px 25px 25px rgba(209, 49, 49, 0.2823529412);
+}
+
+.dragon-choose {
+  cursor: pointer;
+  border-radius: 25px;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  background-color: rgba(48, 102, 63, 0.412);
+  box-shadow: 5px 1px 25px 25px rgba(73, 209, 49, 0.2156862745);
+}
+
+.dragon-choose-selected {
+  background-color: rgba(48, 102, 63, 0.801);
+  box-shadow: 5px 1px 25px 25px rgba(73, 209, 49, 0.5607843137);
+}
+
+.dragon-choose-inactive {
+  background-color: rgba(48, 102, 63, 0.412);
+  box-shadow: 5px 1px 25px 25px rgba(73, 209, 49, 0.2156862745);
+}
+
+.dragon-choose:active {
+  background-color: rgba(48, 102, 63, 0.801);
+  box-shadow: 5px 1px 25px 25px rgba(73, 209, 49, 0.3333333333);
+}
+
+/* CREATE ACCOUNT */
+.create-account {
+  display: none;
+  justify-content: center;
+  margin-top: 100px;
+}
+.create-account img {
+  width: 600px;
+  border-radius: 25px;
+}
+.create-account img:hover {
+  width: 600px;
+  cursor: pointer;
+  box-shadow: 5px 1px 25px 55px rgba(255, 255, 255, 0.5450980392);
+}
+
+/* CREATE ACCOUNT */
+/* CONTAINER CHOOSE HEROES `````````````````````````````````````*/
+/* FORM CREATE ACCOUNT */
+#imgForm {
+  display: none;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#imgForm img {
+  margin-top: 100px;
+  border-radius: 25px;
+}
+#imgForm img:hover {
+  width: 650px;
+  cursor: pointer;
+  box-shadow: 5px 1px 25px 55px rgba(255, 255, 255, 0.5450980392);
+}
+
+#createAccForm {
+  display: none;
+  border-radius: 15px;
+  background-color: rgba(98, 73, 42, 0.534);
+  color: white;
+}
+
+#emailHelp {
+  color: white;
+}
+
+/* FORM CREATE ACCOUNT */
+/* MODAL */
+#modal {
+  display: none;
+}
+#modal .card {
+  background-color: rgba(98, 73, 42, 0.534);
+  color: white;
+  padding: 25px;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#modal .card:hover {
+  background-color: rgba(98, 73, 42, 0.734);
+  font-size: 20px;
+}
+
+/* MODAL */
+/*``````````````````````````````````````````````````*/
+/* MEDIE QUERIES */
+/* STORY IMG */
+@media only screen and (max-width: 1950px) {
+  .album img {
+    width: 800px;
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 1750px) {
+  .album img {
+    width: 700px;
+    margin-top: 150px;
+  }
+  .video {
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .album img {
+    width: 600px;
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container-heroes img {
+    width: 200px;
+    margin-bottom: 70px;
+  }
+  .container-heroes img:hover {
+    width: 250px;
+    margin-bottom: 25px;
+  }
+  .dragon,
+.sprite,
+.dwarf {
+    width: 350px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .album img {
+    margin-top: 100px;
+  }
+  .container-heroes {
+    gap: 10px;
+  }
+  .container-heroes img {
+    width: 150px;
+  }
+  .container-heroes h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .footer img {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .album img {
+    width: 350px;
+    height: 200px;
+    margin-top: 200px;
+  }
+  .header img {
+    width: 300px;
+  }
+  .footer {
+    word-wrap: 300px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .container-heroes img {
+    width: 100px;
+  }
+  .dragon,
+.sprite,
+.dwarf {
+    width: 100px;
+    height: 200px;
+  }
+}
+/* MEDIE QUERIES */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERO GAME</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="header">
+    <img id="startGame" src="./assets/showHeroes.jpg" alt="">
+  </div>
+
+  <!-- <div class="album">
+    <img id="story" src="./assets/prez.jpg" alt=""> -->
+  </div>
+
+  <div class="video">
+    <div class="ratio ratio-16x9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yzmhb4RqKF0?start=57"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="container-heroes">
+    <div class="dwarf">
+      <img src="./assets/dwarf2.png" alt="">
+      <h3>Dwarf 🧝🏿‍♂️</h3>
+      <p>Shield<strong>🛡</strong> </p>
+      <p>Attack <strong>⚔</strong>: <strong>10</strong> </p>
+    </div>
+    <div class="sprite">
+      <img src="./assets/sprite.png" alt="">
+      <h3>Sprite 🧝‍♂️</h3>
+      <p>Fly💨 </p>
+      <p>Attack <strong>⚔</strong>: <strong>15</strong></p>
+    </div>
+    <div class="dragon">
+      <img src="./assets/dragon.png" alt="">
+      <h3>Dragon 🐉</h3>
+      <p>Shield<strong>🛡</strong> Fly💨</p>
+      <p>Attack <strong>⚔</strong>: <strong>20</strong></p>
+    </div>
+  </div>
+
+
+
+  <div class="container-choose-heroes">
+    <div class="wrapper-dwarf">
+      <div class="dwarf-choose">
+        <div class="">
+          <h3>Dwarf 🧝🏿‍♂️</h3>
+          <p>Shield<strong>🛡</strong> </p>
+          <p>Attack <strong>⚔</strong>: <strong>10</strong>
+          <p>
+        </div>
+        <img src="./assets/dwarf2.png" alt="">
+        <p>Dwarves (also known as Dwarfs) are a type of short humanoid folkloric creature that appears in many
+          fairy tales. Seven Dwarves.
+        </p>
+      </div>
+    </div>
+    <div class="wrapper-sprite">
+      <div class="sprite-choose">
+        <div>
+          <h3>Sprite 🧝‍♂️</h3>
+          <p>Fly💨 </p>
+          <p>Attack <strong>⚔</strong>: <strong>15</strong></p>
+        </div>
+        <img src="./assets/sprite.png" alt="">
+        <p>A sprite is a spirit, a mythical, fairy-like creature who lives by the water. Sprites are
+          supernatural and sometimes tricksy.
+        </p>
+      </div>
+    </div>
+    <div class="wrapper-dragon">
+      <div class="dragon-choose">
+        <div>
+          <h3>Dragon 🐉</h3>
+          <p>Shield<strong>🛡</strong> Fly💨</p>
+          <p>Attack <strong>⚔</strong>: <strong>20</strong>
+          <p>
+        </div>
+        <img src="./assets/dragon.png" alt="">
+        <p>A mythical animal usually represented as a monstrous winged and scaly serpent or saurian with a
+          crested head and enormous claws.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="createAc" class="create-account">
+    <img src="./assets/createAccount.jpg" alt="">
+  </div>
+
+
+  <!-- FORM for register in this game -->
+  <div class="position-absolute top-0 start-50 translate-middle p-4 mt-5 mb-5" id="imgForm">
+    <img src="./assets/createAccount.jpg" alt="">
+  </div>
+
+  <div class="position-absolute top-50 start-50 translate-middle p-4 mt-5" id="createAccForm">
+    <form id="myForm">
+      <!-- FIRST TRY TO SHOW MESS AFTER SUBMIT-->
+      <div class="mb-3">
+        <label for="userName" class="form-label">User Name</label>
+        <input class="form-control" id="userName" aria-describedby="userNameHelp">
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword">
+      </div>
+      <div class="mb-3">
+        <label for="reTypePassword" class="form-label">Retype Password</label>
+        <input type="password" class="form-control" id="reTypePassword">
+      </div>
+      <button type="submit" data-bs-toggle="modal" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- FORM for register in this game -->
+
+  <!--  Displayed message after submit -->
+  <div id="modal">
+    <div class="card position-absolute top-50 start-50 translate-middle">
+      <div class="card-body">
+        Acccount created successfully.
+      </div>
+    </div>
+  </div>
+  <!--  Displayed message after submit -->
+
+
+  <div class="footer">
+    <img id="startGameOf" src="./assets/startGame.jpg" alt="">
+  </div>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
