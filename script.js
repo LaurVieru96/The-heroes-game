@@ -342,7 +342,7 @@ form.addEventListener('submit', (e) => {
 
 // PASSWORD / CONFIRM PASSWORD
 var check = function() {
-  if(document.getElementById('inputPassword').value == document.getElementById('reTypePassword').value) {
+  if (document.getElementById('inputPassword').value == document.getElementById('reTypePassword').value) {
     document.getElementById('message').style.color = 'green';
     document.getElementById('message').innerHTML = 'Password matching';
   } else {

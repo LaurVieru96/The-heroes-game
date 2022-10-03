@@ -204,7 +204,7 @@ body {
       height: 220px;
     }
   }
-  
+
   p {
     width: 300px;
   }
@@ -331,6 +331,24 @@ body {
   border-radius: 15px;
   background-color: rgba(98, 73, 42, 0.534);
   color: white;
+
+  &:hover {
+    background-color: rgba(98, 73, 42, 0.834);
+  }
+
+  span {
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.437);
+    border-radius: 15px;
+    padding: 3px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.837);
+    }
+  }
+  #message {
+    margin-top: 15px;
+  }
 }
 
 #emailHelp {
@@ -352,7 +370,7 @@ body {
     letter-spacing: 1px;
 
     &:hover {
-    background-color: rgba(98, 73, 42, 0.734);
+      background-color: rgba(98, 73, 42, 0.734);
       font-size: 20px;
     }
   }

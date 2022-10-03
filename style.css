@@ -300,6 +300,21 @@ body::after {
   background-color: rgba(98, 73, 42, 0.534);
   color: white;
 }
+#createAccForm:hover {
+  background-color: rgba(98, 73, 42, 0.834);
+}
+#createAccForm span {
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.437);
+  border-radius: 15px;
+  padding: 3px;
+}
+#createAccForm span:hover {
+  background-color: rgba(0, 0, 0, 0.837);
+}
+#createAccForm #message {
+  margin-top: 15px;
+}
 
 #emailHelp {
   color: white;
