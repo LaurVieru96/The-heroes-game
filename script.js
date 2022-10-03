@@ -340,4 +340,16 @@ form.addEventListener('submit', (e) => {
 // //  ``````````````SECOND TRY TO SHOW MESS AFTER SUBMIT 
 
 
+// PASSWORD / CONFIRM PASSWORD
+var check = function() {
+  if(document.getElementById('inputPassword').value == document.getElementById('reTypePassword').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Password matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'NOT MATCHING';
+  }
+}
+
+// PASSWORD / CONFIRM PASSWORD
 
