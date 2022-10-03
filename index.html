@@ -129,11 +129,11 @@
       </div>
       <div class="mb-3">
         <label for="inputPassword" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword">
+        <input type="password" class="form-control" onkeyup='check();' id="inputPassword">
       </div>
       <div class="mb-3">
         <label for="reTypePassword" class="form-label">Retype Password</label>
-        <input type="password" class="form-control" id="reTypePassword">
+        <input type="password" class="form-control" onkeyup='check();' id="reTypePassword">
       </div>
       <button type="submit" data-bs-toggle="modal" class="btn btn-primary">Submit</button>
     </form>
