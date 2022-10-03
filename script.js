@@ -40,7 +40,7 @@ class Hero {
       let chance = Math.random();
       if (chance > 0.5) {
         console.log(this.name + " flew away ! 💸");
-        damage = 0;
+
       }
     }
 
@@ -48,9 +48,11 @@ class Hero {
     if (this.shield) {
       damage *= 0.8;           // dmg - 0.2    
       console.log(this.name + " defence with a shield !");
+
     }
     this.hp -= damage;
     console.log(this.name + " has been attacked. HP reduced by " + damage + ". HP remaining: " + this.hp + ".");
+
   }
 };
 
@@ -63,6 +65,7 @@ class Dwarf extends Hero {
     let damage = 15;
     console.log(`${this.name} attacked with damage: ${damage}.`);
     otherHero.attacked(damage);                    //other hero attack
+
   }
 }
 
@@ -75,6 +78,7 @@ class Sprite extends Hero {
     let damage = 20;
     console.log(`${this.name} attacked with damage: ${damage}.`);
     otherHero.attacked(damage);
+
   }
 }
 
@@ -88,6 +92,7 @@ class Dragon extends Hero {
     let damage = 25;
     console.log(`${this.name} attacked with damage: ${damage}.`);
     otherHero.attacked(damage);
+
   }
 }
 
@@ -114,10 +119,14 @@ class Fight {
   findWinner() {
     if (this.hero1.hp > 0) {
       console.log(this.hero1.name + " won with" + this.hero1.hp + " HP left.");
+
     } else if (this.hero2.hp > 0) {
       console.log(this.hero2.name + " won with " + this.hero2.hp + " HP left.");
+
+
     } else {
       console.log("No hero left alive.");
+
     }
   }
 
@@ -139,7 +148,7 @@ class Fight {
 
 var dwarfTheKurbada = new Dwarf("Dwarf", 100);
 var spriteTheBumble = new Sprite("Sprite", 100);
-var dragonThePrun = new Dragon("Dragon", 100);
+var dragonThePrun = new Dragon("Dragon", 70);
 
 //creating the Fight and starting it
 // var epicFight = new Fight(dwarfTheKurbada, dragonThePrun);
@@ -147,7 +156,6 @@ var epicFight = new Fight(dwarfTheKurbada, dragonThePrun);
 epicFight.go();
 
 // END APPLICATION //
-
 
 
 
@@ -167,6 +175,7 @@ let iFrame = document.querySelector('.video');
 // WHEN PRESS START CHANGE BACKGROUND IMAGE
 let backgroundIMG2 = document.querySelector('body');
 // WHEN PRESS START CHANGE BACKGROUND IMAGE
+
 
 // Appear CARDS, and START GAME; Dissapear SHOW HEROES and STORY
 showHeroes.addEventListener('click', showCards);
@@ -208,18 +217,14 @@ function register() {
   imgForm.classList.remove('d-none');
   imgForm.classList.add('d-flex');
 }
-
-
 // Dissapear CHOSSES
 
 
 
 //   Make an hero element to keep ACTIVE attributes.
-
 let dwarf = document.querySelector('.dwarf-choose');
 let sprite = document.querySelector('.sprite-choose');
 let dragon = document.querySelector('.dragon-choose');
-
 
 dwarf.addEventListener('click', selectedD);
 function selectedD() {
@@ -236,11 +241,11 @@ function selectedDr() {
 //   Make an hero element to keep ACTIVE attributes.
 
 
+
 //                           START
 // if dwarf has 'class active' true && sprite has class active true
 // eventlistener DRAGON  cursor off
 //  CLASS 'not-allowed'
-
 let cursorOffDw = document.querySelector('.wrapper-dwarf');
 let cursorOffS = document.querySelector('.wrapper-sprite');
 let cursorOffD = document.querySelector('.wrapper-dragon');
@@ -263,10 +268,10 @@ function twoSelectionOfThree() {
   }
 }
 chooseHeroHorizon.addEventListener("click", twoSelectionOfThree);
-
-
-
 //                              END
+
+
+
 
 // if dwarf is selected and sprite is unselected , dragon can now be selected
 // PSEUDO>
@@ -283,10 +288,6 @@ chooseHeroHorizon.addEventListener("click", twoSelectionOfThree);
 //     dragon.classList.remove('opacity05');
 // }
 // chooseHeroHorizon.addEventListener('click', makeSelection);
-
-
-
-
 
 
 
@@ -318,10 +319,9 @@ chooseHeroHorizon.addEventListener("click", twoSelectionOfThree);
 // //  ``````````````FIRST TRY TO SHOW MESS AFTER SUBMIT
 
 
+
 // //  ``````````````SECOND TRY TO SHOW MESS AFTER SUBMIT 
-
 let modal = document.querySelector('#modal');
-
 
 let form = document.querySelector('#myForm');
 form.addEventListener('submit', (e) => {
@@ -329,19 +329,17 @@ form.addEventListener('submit', (e) => {
   createAccForm.classList.remove('d-flex');
   createAccForm.classList.add('d-none');
   imgForm.classList.remove('d-flex');
-  imgForm.classList.add('d-none');
+  // imgForm.classList.add('d-none');
   modal.classList.remove('d-none');
   modal.classList.add('d-flex');
-
-  // alert("Form Submitted");
-
 });
-
 // //  ``````````````SECOND TRY TO SHOW MESS AFTER SUBMIT 
 
 
+
+
 // PASSWORD / CONFIRM PASSWORD
-var check = function() {
+var check = function () {
   if (document.getElementById('inputPassword').value == document.getElementById('reTypePassword').value) {
     document.getElementById('message').style.color = 'green';
     document.getElementById('message').innerHTML = 'Password matching';
