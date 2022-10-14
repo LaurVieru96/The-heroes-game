@@ -134,21 +134,6 @@ body::after {
 }
 
 /* HEROES CARD ```````````````````````````*/
-/* DISPLAY TYPE */
-.d-none {
-  display: none !important;
-}
-
-.d-grid {
-  display: grid !important;
-  /* display: grid; */
-}
-
-.d-flex {
-  display: flex !important;
-}
-
-/* DISPLAY TYPE */
 /* ADDES IN JS */
 .opacity05 {
   opacity: 0.5;
@@ -350,6 +335,21 @@ body::after {
 }
 
 /* MODAL */
+/* DISPLAY TYPE */
+.d-none {
+  display: none;
+}
+
+.d-grid {
+  display: grid;
+  /* display: grid; */
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* DISPLAY TYPE */
 /*``````````````````````````````````````````````````*/
 /* MEDIE QUERIES */
 /* STORY IMG */
